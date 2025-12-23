@@ -1,0 +1,21 @@
+{
+  "id": "level-based-dc",
+  "title": "Level-Based DC Checks",
+  "description": "Adds support for level-based DC check buttons in chat messages for PF2e",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Your Name"
+    }
+  ],
+  "esmodules": [
+    "scripts/level-based-dc.js"
+  ],
+  "systems": [
+    "pf2e"
+  ]
+}

@@ -25,6 +25,6 @@
       }
     ],
   "url": "https://github.com/TomHalverson/Intrinsics-Skill-Checker",
-  "manifest": "https://github.com/TomHalverson/Intrinsics-Skill-Checker/releases/latest/download/module.json",
-  "download": "https://github.com/TomHalverson/Intrinsics-Skill-Checker/releases/latest/download/module.zip"
+  "manifest": "https://raw.githubusercontent.com/TomHalverson/Intrinsics-Skill-Checker/refs/heads/main/module.json",
+  "download": "https://github.com/TomHalverson/Intrinsics-Skill-Checker/archive/refs/heads/main.zip"
 }

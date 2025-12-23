@@ -1,21 +1,30 @@
 {
-  "id": "level-based-dc",
-  "title": "Level-Based DC Checks",
+  "id": "intrinsics-skill-checkes",
+  "title": "Intrinsics Skill Checks",
   "description": "Adds support for level-based DC check buttons in chat messages for PF2e",
   "version": "1.0.0",
   "compatibility": {
-    "minimum": "13",
+    "minimum": "12",
     "verified": "13"
   },
   "authors": [
     {
-      "name": "Your Name"
+      "name": "Intrinsic"
     }
   ],
   "esmodules": [
     "scripts/level-based-dc.js"
   ],
-  "systems": [
-    "pf2e"
-  ]
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "verified": "6.0.0"
+        }
+      }
+    ],
+  "url": "https://github.com/TomHalverson/Intrinsics-Skill-Checker",
+  "manifest": "https://github.com/TomHalverson/Intrinsics-Skill-Checker/releases/latest/download/module.json",
+  "download": "https://github.com/TomHalverson/Intrinsics-Skill-Checker/releases/latest/download/module.zip"
 }

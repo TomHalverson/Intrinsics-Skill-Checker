@@ -18,7 +18,11 @@ Hooks.once("ready", () => {
             let actor = null;
             if (canvas.tokens.controlled.length > 0) {
                 actor = canvas.tokens.controlled[0].actor;
+            } else if (game.user.character) {
+                // Use the user's assigned character
+                actor = game.user.character;
             } else {
+                // Last resort: Get the first character this user owns
                 actor = game.actors.filter(a =>
                     a.type === "character" &&
                     a.permission[game.user.id] === 3
@@ -26,7 +30,7 @@ Hooks.once("ready", () => {
             }
 
             if (!actor) {
-                ui.notifications.error("No character selected or assigned!");
+                ui.notifications.error("No character selected or assigned! Select a token or assign a character to your user.");
                 return;
             }
 
@@ -39,7 +43,7 @@ Hooks.once("ready", () => {
             const skillNames = Object.keys(skills).sort();
             const skillOptions = skillNames.map(key => {
                 const skill = skills[key];
-                const modifier = skill.modifiers?.[0]?.modifier || skill.mod || 0;
+                const modifier = skill.check?.mod ?? skill.totalModifier ?? skill.mod ?? 0;
                 const modStr = modifier >= 0 ? `+${modifier}` : `${modifier}`;
                 return `<option value="${key}">${skill.label || key} (${modStr})</option>`;
             }).join("");

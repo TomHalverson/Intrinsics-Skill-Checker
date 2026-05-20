@@ -1,6 +1,6 @@
 # Level-Based DC Check Module
 
-This module adds support for interactive DC check buttons in Foundry VTT chat messages for the Pathfinder 2e system.
+This module adds support for interactive DC check buttons in Foundry VTT chat messages for the Pathfinder 2e and Starfinder 2e systems.
 
 ## Installation
 
@@ -37,5 +37,10 @@ The `Level_Based_DC.js` macro (in Misc Macros) creates chat messages with intera
 
 ## Requirements
 
-- Foundry VTT v11+
-- Pathfinder 2e game system
+- Foundry VTT v12+
+- Pathfinder 2e or Starfinder 2e game system
+
+## Compatibility
+
+- PF2E: verified with 6.0.0
+- SF2E: supported from 0.0.11

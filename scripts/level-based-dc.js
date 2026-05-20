@@ -1,5 +1,5 @@
 // Level-Based DC Check Module
-// Installs hook on all clients to handle DC check button clicks
+// Installs hook on all clients to handle DC check button clicks for PF2E/SF2E
 
 Hooks.once("ready", () => {
     console.log("Level-Based DC Check module loaded");
